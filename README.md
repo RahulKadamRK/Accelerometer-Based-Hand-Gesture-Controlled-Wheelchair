@@ -78,8 +78,8 @@ The Ultrasonic Sensor constantly scans for obstacles. If an obstacle is detected
 1. **Transmitter Setup**
    - Assemble the circuit as shown in `transmitter.jpg`.
    - Fix the accelerometer securely on a wristband/glove.
-   - Upload the code in `transmitter_section.ino` to the Arduino
-   - Update the threshold ranges if required
+   - Upload the code `transmitter_section.ino` to the Arduino.
+   - Update the threshold ranges if required.
 
 2. **Receiver Setup**
    - Assemble the receiver circuit as per `receiver.jpg`.
