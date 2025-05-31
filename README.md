@@ -32,7 +32,7 @@ Mounted on the wheelchair, it receives gesture signals and drives the motors acc
 
 ## Components
 
-**Transmitter (Wristband):**
+**Transmitter (Wristband/glove):**
 
 - Arduino Uno
 - 434 MHz RF Transmitter
@@ -63,3 +63,25 @@ Each hand gesture (right, left, forward, backward) corresponds to a specific sig
 The RF Receiver captures the transmitted signals and feeds them to the Arduino Uno.
 Based on the decoded signals, the Arduino controls the wheelchair motors using the L293D Motor Driver to move in the desired direction.
 The Ultrasonic Sensor constantly scans for obstacles. If an obstacle is detected within a preset range, the wheelchair stops immediately and activates the buzzer to alert the user.
+
+---
+
+## Getting Started
+
+### Software and Library Installation
+
+- [Arduino IDE](https://www.arduino.cc/en/software) for programming the microcontrollers.
+- [VirtualWire Library](https://www.airspayce.com/mikem/arduino/VirtualWire/) for RF wireless communication.
+
+### Setup Instructions
+
+1. **Transmitter Setup**
+   - Assemble the circuit as shown in `transmitter.jpg`.
+   - Fix the accelerometer securely on a wristband/glove.
+   - Upload the code in `transmitter_section.ino` to the Arduino
+   - Update the threshold values in `transmitter_section.ino` if required
+
+2. **Receiver Setup**
+   - Assemble the receiver circuit as per `receiver.jpg`.
+   - Upload the code `receiver_section.ino` to the Arduino on the wheelchair.
+   - Adjust the obstacle detection distance in the code if needed.
